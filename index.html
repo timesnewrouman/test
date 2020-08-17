@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+  <table class="table">
+    <tr class="table__header table__row">
+      <td class="table__header-cell">name</td>
+      <td class="table__header-cell">type</td>
+      <td class="table__header-cell">color</td>
+    </tr>
+  </table>
+  <button class="button button_add">+</button>
+  <div class="popup popup_add">
+    <div class="popup__content">
+      <img src="./images/close.svg" alt="" class="popup__close">
+      <h3 class="popup__title">Новое запись</h3>
+      <form class="popup__form" name="add">
+        <div class='input-container'>
+          <input type="text" name="name" class="popup__input" placeholder="name" required
+            maxlength="30" minlength="2">
+        </div>
+        <div class='input-container'>
+          <input type="text" name="type" class="popup__input"
+            placeholder="type" required minlength="2">
+        </div>
+        <div class='input-container'>
+          <input type="text" name="color" class="popup__input"
+            placeholder="color" required minlength="2">
+        </div>
+        <button type="submit" id="+" class="button popup__button">+</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_edit">
+    <div class="popup__content">
+      <img src="./images/close.svg" alt="" class="popup__close">
+      <h3 class="popup__title">Редактировать запись</h3>
+      <form class="popup__form" name="edit">
+        <div class='input-container'>
+          <input type="text" id="name2" name="name" class="popup__input popup__input_type_name2" placeholder="name"
+            required maxlength="30" minlength="2">
+        </div>
+        <div class='input-container'>
+          <input type="text" id="about" name="type" class="popup__input popup__input_type_about" placeholder="type"
+            required maxlength="30" minlength="2">
+        </div>
+        <div class='input-container'>
+          <input type="text" id="about" name="color" class="popup__input popup__input_type_about" placeholder="color"
+            required maxlength="30" minlength="2">
+        </div>
+        <button type="submit" id="save" class="button popup__button popup__button_save">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <script src='./js/InitialData.js'></script>
+  <script src='./js/TableRow.js'></script>
+  <script src='./js/MainTable.js'></script>
+  <script src='./js/Popup.js'></script>
+  <script src='./js/DragAndDrop.js'></script>
+  <script src='./js/script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.button_delete {
+  background-image: url(../../../images/delete20px.png);
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  margin-top: 3px;
+  cursor: url(../../../images/lapka.svg), auto;
+}

@@ -1,0 +1,11 @@
+.table__cell {
+  border: solid 1px gray;
+  min-width: 100px;
+  padding: 0;
+}
+
+@media screen and (max-width : 576px) {
+  .table__cell {
+    min-width: 70px;
+  }
+}

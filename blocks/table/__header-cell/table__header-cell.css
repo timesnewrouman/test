@@ -1,0 +1,5 @@
+.table__header-cell {
+  min-width: 100px;
+  padding: 0;
+  margin: 0 1px;
+}

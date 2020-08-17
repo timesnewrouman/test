@@ -1,0 +1,20 @@
+@import url(./__cell/table__cell.css);
+@import url(./__header/table__header.css);
+@import url(./__row/table__row.css);
+@import url(./__header-cell/table__header-cell.css);
+
+.table {
+  margin: 70px 0 0 70px;
+}
+
+@media screen and (max-width : 768px) {
+  .table {
+    margin: 50px 0 0 50px;
+  }
+}
+
+@media screen and (max-width : 425px) {
+  .table {
+    margin: 10px 0 0 10px;
+  }
+}
